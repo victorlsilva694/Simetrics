@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #131313;
+    color: #f0f0f5;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.03);
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 65px auto;
+    padding: 90px 64px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    position: relative;
+    top: -50px;
+    font-family: 'Alfa Slab One';
+    font-size: 45px;
+    text-align: center;
+}
+
+div.input {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+input,
+button {
+    /* reset appeareance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* box */
+    width: 100%;
+
+    padding: 16px 0;
+
+    border:none;
+    border-bottom: 1px solid  rgb(1, 143, 107);
+
+    background-color: transparent;
+
+    outline: none;
+
+    /* text */
+    color: var(--text-color);
+    font-size: 1em;
+
+}
+.Registrar{
+    color: rgb(143, 143, 143);
+}
+.Register{
+    position: relative;
+    top: 1vh;
+    display: inline-flex;
+}
+.RegisterLink{
+    position: relative;
+    left: 5%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+button {
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 80px;
+    background-color:  rgb(1, 143, 107);
+}
+
+input ~ label {
+    position: absolute;
+    top: 23px;
+    left: 0;
+
+    color: rgba(255, 255, 255, 0.6) ;
+
+    transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+.T2{
+    color: rgb(1, 143, 107);
+    font-family: 'Alfa Slab One';
+}
+.ErrorMessage{
+    background-color: red;
+    width: 50px;
+}
